@@ -6,4 +6,10 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
   // 应用组件库模块
   modules: ["@vant/nuxt"],
+  postcss: {
+    plugins: {
+      tailwindcss: {},
+      autoprefixer: {},
+    },
+  }
 });

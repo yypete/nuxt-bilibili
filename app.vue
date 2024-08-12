@@ -10,20 +10,14 @@ useSeoMeta({
 
 <template>
   <div>
-    <!-- 首页路由 -->
-    <nuxt-link to="/">首页</nuxt-link>
-    <!-- 附页路由 -->
-    <nuxt-link to="/video">附页</nuxt-link>
     <NuxtPage />
-    <van-button type="primary">主要按钮</van-button>
-    <van-button type="success">成功按钮</van-button>
-    <van-button type="default">默认按钮</van-button>
-    <van-button type="danger">危险按钮</van-button>
-    <van-button type="warning">警告按钮</van-button>
   </div>
 </template>
 
 <style>
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 :root {
   --van-primary-color: #fb7299 !important;
 }

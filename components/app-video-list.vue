@@ -17,16 +17,16 @@
             <img :src="item.pic" class="w-full h-full" :alt="item.title" />
             <!-- 播放量固定在左下角 -->
             <span
-              class="absolute bottom-2 left-2 flex items-center space-x-1 text-sm"
+              class="absolute bottom-2 left-2 flex items-center space-x-1 text-md text-white"
             >
-              <img src="../../assets/播放.webp" alt="播放" class="w-6 h-6" />
+              <img src="@/assets/播放.webp" alt="播放" class="w-6 h-6" />
               <span>{{ item.stat.view }}</span>
             </span>
             <!-- 弹幕固定在右下角 -->
             <span
-              class="absolute bottom-2 right-2 flex items-center space-x-1 text-sm"
+              class="absolute bottom-2 right-2 flex items-center space-x-1 text-md text-white"
             >
-              <img src="../../assets/弹幕.png" alt="弹幕" class="w-5 h-5" />
+              <img src="@/assets/弹幕.png" alt="弹幕" class="w-5 h-5" />
               <span>{{ item.stat.danmaku }}</span>
             </span>
           </div>

@@ -4,9 +4,11 @@
     class="flex flex-wrap items-center justify-between p-4 bg-white shadow-lg"
   >
     <!-- Logo -->
-    <span class="flex-shrink-0">
-      <img src="@/assets/bilibili字母.png" class="h-12" alt="Logo" />
-    </span>
+    <nuxt-link to="/">
+      <span class="flex-shrink-0">
+        <img src="@/assets/bilibili字母.png" class="h-12" alt="Logo" />
+      </span>
+    </nuxt-link>
     <!-- Search Bar -->
     <span class="flex-grow mx-4">
       <div class="relative">

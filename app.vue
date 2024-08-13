@@ -9,16 +9,18 @@ useSeoMeta({
 useHead({
   meta: [
     {
-      name: 'referrer',
-      content: 'no-referrer'
-    }
-  ]
+      name: "referrer",
+      content: "no-referrer",
+    },
+  ],
 });
 </script>
 
 <template>
   <div>
-    <NuxtPage />
+    <NuxtPage keepalive="max:10" />
+    <!-- keepalive 缓存页面 最大10级 -->
+    <!-- NuxtPage 用于页面路由 首页为index文件中的index.vue-->
   </div>
 </template>
 

@@ -38,9 +38,12 @@
 </template>
 <script setup lang="ts">
 const { params } = useRoute();
-
 // 根据视频 id 获取视频详情
 const { data: detail } = await useFetch(`/api/video/${params.id}`);
+// SEO 优化
+useSeoMeta({
+  title: `${detail.value?.title} - 哔哩哔哩 (゜-゜)つロ 干杯~-bilibili官方`,
+});
 
 const barrageList = ref([
   { id: 100, text: "轻量" },
@@ -53,11 +56,6 @@ const barrageList = ref([
 ]);
 
 const barrageRef = ref();
-
-// SEO 优化
-useSeoMeta({
-  title: `${detail.value?.title} - 哔哩哔哩 (゜-゜)つロ 干杯~-bilibili官方`,
-});
 
 const onPlay = () => {
   barrageRef.value?.play();

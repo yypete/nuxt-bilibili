@@ -6,6 +6,14 @@ useSeoMeta({
   keywords:
     "Bilibili,哔哩哔哩,哔哩哔哩动画,哔哩哔哩弹幕网,弹幕视频,B站,弹幕,字幕,AMV,MAD,MTV,ANIME,动漫,动漫音乐,游戏,游戏解说,二次元,游戏视频",
 });
+useHead({
+  meta: [
+    {
+      name: 'referrer',
+      content: 'no-referrer'
+    }
+  ]
+});
 </script>
 
 <template>
